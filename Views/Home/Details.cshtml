@@ -1,0 +1,30 @@
+@model FormulaUno.Models.DriverDetailVM
+@{
+    ViewData["Title"] = Model.FullName;
+}
+
+<a asp-action="Index" class="btn btn-outline-light btn-sm f1-pill mb-3">? Volver</a>
+
+<div class="f1-glass p-3 p-md-4">
+    <h2 class="mb-4">@Model.FullName</h2>
+
+    <div class="row g-3">
+        <div class="col-md-6">
+            <div><strong>Nacionalidad:</strong> @Model.Nationality</div>
+        </div>
+        <div class="col-md-6">
+            <div><strong>Fecha de nacimiento:</strong> @Model.Birthday</div>
+        </div>
+        <div class="col-12">
+            <strong>Wikipedia:</strong>
+            @if (!string.IsNullOrWhiteSpace(Model.WikiUrl))
+            {
+                <a href="@Model.WikiUrl" class="link-light" target="_blank" rel="noopener">Abrir en Wikipedia</a>
+            }
+            else
+            {
+                @:—
+            }
+        </div>
+    </div>
+</div>

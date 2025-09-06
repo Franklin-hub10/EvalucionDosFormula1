@@ -1,0 +1,45 @@
+/* Fondo general (reemplaza la URL por tu imagen de fondo) */
+.f1-bg {
+    --f1-bg: url('https://wallpapers.com/images/hd/formula-1-desktop-326ommszbis76p1f.jpg'); /* <-- pega tu URL si quieres */
+    background-image: var(--f1-bg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+/* Contenedores con transparencia para que se vea el fondo */
+.f1-glass {
+    background: rgba(0,0,0,0.65);
+    color: #fff;
+    border: 1px solid rgba(220,53,69,.35); /* rojo bootstrap-ish */
+    border-radius: .75rem;
+    box-shadow: 0 1rem 2rem rgba(0,0,0,.35);
+}
+
+/* Cabecera/hero */
+.f1-hero-title {
+    color: #fff;
+    text-shadow: 0 2px 8px rgba(0,0,0,.6);
+}
+
+.f1-pill {
+    border: 1px solid rgba(220,53,69,.5);
+    background: rgba(0,0,0,.55);
+    color: #fff;
+}
+
+/* Links sobre fondo oscuro */
+a.link-light {
+    color: #cfe8ff;
+}
+
+    a.link-light:hover {
+        color: #fff;
+    }
+
+/* Tabla – sin fondo blanco sólido */
+.table.f1-table > :not(caption) > * > * {
+    background-color: transparent !important;
+    color: #eaeaea;
+    border-color: rgba(255,255,255,.1);
+}

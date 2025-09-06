@@ -1,0 +1,11 @@
+﻿.vs/
+**/.vs/
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+**/[Dd]ebug*/
+**/[Rr]elease*/
+.vscode/
+node_modules/
+wwwroot/lib/
+appsettings.*.local.json
